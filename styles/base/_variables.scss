@@ -1,0 +1,25 @@
+$white: #fff;
+$black: #000;
+
+$dynamicBlue: #0098cc;
+$frenchBlue: #3768b0;
+$orange: #E17055;
+
+$darkGrey: #1c1c1c;
+$mediumGrey: #dfdfdf;
+$lightGrey: #f1f1f1;
+
+$jostFont: "Jost", sans-serif;
+$sansSourceFont: "Source Sans 3", sans-serif;
+$karlaFont: 'Karla', sans-serif;
+
+$rightTOLeftGradient: linear-gradient(43deg, $dynamicBlue 0%, $frenchBlue 100%);
+
+// font weights
+
+$fw-extraLight: 200;
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;

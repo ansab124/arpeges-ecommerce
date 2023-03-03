@@ -1,0 +1,120 @@
+.contact {
+    &_container {
+        &-header {
+            text-align: center;
+            max-width: 90%;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+
+            h1 {
+                font-size: 34px;
+                font-family: $sansSourceFont;
+                margin-bottom: 1rem;
+            }
+
+        }
+
+        &-content {
+            select {
+                padding: 10px;
+                font-size: 14px;
+                width: 100%;
+                border-radius: 10px;
+                border: 1px solid black;
+            }
+
+            input,
+            textarea {
+                border-radius: 10px;
+                border-width: 1px;
+            }
+
+            ::-webkit-input-placeholder {
+                font-size: 14px;
+                font-style: normal;
+            }
+
+            :-ms-input-placeholder {
+                font-size: 14px;
+                font-style: normal;
+
+            }
+
+            ::placeholder {
+                font-size: 14px;
+                font-style: normal;
+
+            }
+
+            button {
+                padding: 1rem 4rem !important;
+                background-color: black !important;
+
+            }
+            input [type="checkbox"] {
+                width: 26px !important;
+                height: 26px !important;
+
+            }
+
+            /* Pseudo element for check styling */
+
+            input[type="checkbox"]::before {
+                content: "";
+                color: #fff;
+                display: block;
+                width: inherit;
+                height: inherit;
+                border: 0;
+                background-color: #fff;
+                background-size: contain;
+                border: 1px solid black;
+                box-shadow: inset 0 0 0 1px #fff;
+            }
+
+            &_card {
+                background-color: $mediumGrey;
+                padding: 1rem;
+                margin-top: 1rem;
+
+                &-section {
+                    margin-top: 1rem;
+
+                    h4 {
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: bold;
+                        font-family: $sansSourceFont;
+                    }
+
+                    p {
+                        color: black;
+                        padding: 0px;
+                        margin: 0px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: $dynamicBlue;
+                    }
+                }
+
+         
+            }
+        }
+    }
+}
+
+.phone {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem 0rem;
+    font-family: $sansSourceFont;
+}
+
+@media only screen and (max-width: 480px) { 
+    .contact_container-content_card {
+        margin-bottom: 2rem;
+    } 
+}

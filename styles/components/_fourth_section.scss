@@ -1,0 +1,220 @@
+.fourth_section_container {
+  .tab_container {
+    height: 205px;
+  }
+  .heading_container {
+    .heading_text {
+      font-size: 30px;
+      letter-spacing: 1px;
+      line-height: 24px;
+      color: #1c1c1a;
+      font-weight: $fw-semibold;
+      font-family: $jostFont;
+      top: 43px;
+      width: 200px;
+      position: absolute;
+    }
+  }
+
+  .fourth_section_slick_container {
+    width: 230px;
+
+    @media only screen and (min-width: 468px) {
+      width: 260px;
+    }
+
+    @media only screen and (min-width: 992px) {
+      width: 270px;
+    }
+    @media only screen and (min-width: 1200px) {
+      width: 263px;
+    }
+    @media only screen and (min-width: 1400px) {
+      width: 273px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .slick-slider .slick-list {
+        margin: 0 3rem;
+      }
+    }
+
+
+    &-image_container {
+      height: 274px;
+    }
+    .plus_container {
+      display: none !important;
+    }
+
+    &-content_section {
+      .content_heading {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: $fw-semibold;
+        font-family: $jostFont;
+      }
+      .content_sub_heading {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: $fw-normal;
+        font-family: $sansSourceFont;
+      }
+      .content_desc {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: $fw-normal;
+        font-family: $sansSourceFont;
+        font-style: italic;
+      }
+      .content_price_sec_new {
+        font-size: 24px;
+        font-weight: $fw-semibold;
+        font-family: $jostFont;
+        color: $dynamicBlue;
+      }
+      .content_price_sec_old {
+        font-size: 14px;
+        font-weight: $fw-semibold;
+        font-family: $jostFont;
+        color: #999999;
+        text-decoration: line-through;
+      }
+      .blue_content {
+        font-size: 12px;
+        color: $dynamicBlue;
+      }
+      .black_content {
+        font-size: 12px;
+      }
+      .content_container .cart_container svg {
+        color: $dynamicBlue;
+      }
+    }
+  }
+  .fourth_section_slick_container:hover {
+    .plus_container {
+      display: block !important;
+      width: 57px;
+      color: $white;
+      height: 57px;
+      padding-top: 15px;
+      border-radius: 28px;
+      background-image: $rightTOLeftGradient;
+      z-index: 1000;
+    }
+  }
+  .slick-next,
+  .slick-prev {
+    color: #000 !important;
+    height: 35px;
+    width: 30px;
+  }
+  .slick-next {
+    top: 500px;
+    right: 41%;
+    @media only screen and (min-width: 575px) {
+      right: -10px;
+      top: 250px;
+    }
+    @media only screen and (min-width: 1200px) {
+      right: -20px;
+    }
+  }
+  .slick-prev {
+    top: 500px;
+    left: 41%;
+    @media only screen and (min-width: 575px) {
+      left: -10px;
+      top: 250px;
+    }
+    @media only screen and (min-width: 1200px) {
+      left: -20px;
+    }
+  }
+  .heading_main_text {
+    font-size: 24px;
+    letter-spacing: 0px;
+    line-height: 17px;
+    color: #1c1c1a;
+    font-weight: $fw-semibold;
+    font-family: $jostFont;
+
+    @media only screen and (min-width: 575px) {
+      font-size: 30px;
+      letter-spacing: 1px;
+      line-height: 24px;
+      font-weight: $fw-semibold;
+      top: 43px;
+    }
+  }
+}
+.instrument_slick_container {
+  width: 184px !important;
+}
+
+.search_section_container {
+  &-image_container {
+    height: 274px;
+  }
+  .plus_container {
+    display: none !important;
+  }
+
+  &-content_section {
+    .content_heading {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: $fw-semibold;
+      font-family: $jostFont;
+    }
+    .content_sub_heading {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: $fw-normal;
+      font-family: $sansSourceFont;
+    }
+    .content_desc {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: $fw-normal;
+      font-family: $sansSourceFont;
+      font-style: italic;
+    }
+    .content_price_sec_new {
+      font-size: 24px;
+      font-weight: $fw-semibold;
+      font-family: $jostFont;
+      color: $dynamicBlue;
+    }
+    .content_price_sec_old {
+      font-size: 14px;
+      font-weight: $fw-semibold;
+      font-family: $jostFont;
+      color: #999999;
+      text-decoration: line-through;
+    }
+    .blue_content {
+      font-size: 12px;
+      color: $dynamicBlue;
+    }
+    .black_content {
+      font-size: 12px;
+    }
+    .content_container .cart_container svg {
+      color: $dynamicBlue;
+    }
+  }
+}
+.search_section_container:hover {
+  .plus_container {
+    display: block !important;
+    width: 45px;
+    color: $white;
+    height: 45px;
+    padding-top: 11px;
+    border-radius: 28px;
+    background-image: $rightTOLeftGradient;
+    transition: all 0.3s ease-in-out;
+  }
+}

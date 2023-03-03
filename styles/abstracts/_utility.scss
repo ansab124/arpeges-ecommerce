@@ -1,0 +1,234 @@
+.theme_heading_jost_h1 {
+  font-size: 60px !important;
+  font-weight: $fw-semibold;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: $black;
+  text-transform: capitalize;
+  font-family: $jostFont;
+}
+
+.theme_heading_jost_h2 {
+  font-size: 24px !important;
+  font-weight: $fw-medium;
+  letter-spacing: 0px;
+  color: $black;
+  text-transform: capitalize;
+  font-family: $jostFont;
+
+  @media only screen and (min-width: 575px) {
+    font-size: 36px !important;
+    font-weight: $fw-semibold;
+  }
+}
+
+.theme_heading_jost_h3 {
+  font-size: 22px !important;
+  font-weight: $fw-normal;
+  line-height: 29px;
+  letter-spacing: 0px;
+  color: $black;
+  text-transform: capitalize;
+  font-family: $jostFont;
+
+  @media only screen and (min-width: 575px) {
+    font-size: 30px !important;
+    line-height: 40px;
+  }
+}
+
+.theme_heading_jost_h4 {
+  font-size: 19px !important;
+  font-weight: $fw-normal;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: $black;
+  text-transform: capitalize;
+  font-family: $jostFont;
+
+  @media only screen and (min-width: 575px) {
+    font-size: 24px !important;
+    line-height: 29px;
+  }
+}
+
+.theme_heading_jost_h5 {
+  font-size: 15px !important;
+  font-weight: $fw-light;
+  line-height: 29px;
+  letter-spacing: 0px;
+  color: $black;
+  text-transform: capitalize;
+  font-family: $jostFont;
+}
+
+// .text-light {
+//   color: #fff !important;
+// }
+// .text-center {
+//   text-align: center !important;
+// }
+// .h-100 {
+//   height: 100% !important;
+// }
+// .bg-light {
+//   background-color: #fff !important;
+// }
+.bg-dark {
+  background-color: $black  !important;
+}
+
+.dynamic_blue {
+  color: $dynamicBlue  !important;
+}
+
+.dynamic_fresh_gradient {
+  background-image: linear-gradient(83deg, $dynamicBlue 0%, $frenchBlue 100%);
+  // background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+strong {
+  font-size: 16px !important;
+  line-height: 19px;
+  letter-spacing: 0px;
+  color: $black;
+  text-transform: capitalize;
+  font-weight: $fw-medium;
+  font-family: "Source Sans";
+}
+
+a {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: $black;
+  text-transform: capitalize;
+  font-weight: $fw-medium;
+  font-family: "Source Sans";
+}
+
+// .fw-bold {
+//   font-weight: 700 !important;
+// }
+// .h-50 {
+//   height: 50% !important;
+// }
+// .h-75 {
+//   height: 75% !important;
+// }
+// .text-dark {
+//   color: #000 !important;
+// }
+
+body {
+  font-family: $jostFont  !important;
+}
+
+// .position-relative {
+//   position: relative !important;
+// }
+// .position-absolute {
+//   position: absolute !important;
+// }
+.w-100 {
+  width: 100% !important;
+}
+
+.ant-select-selector {
+  height: 35px !important;
+}
+
+// .ant-select-arrow {
+//   color: #000 !important;
+// }
+p {
+  font-family: "Source Sans", sans-serif;
+  font-size: 16px !important;
+  font-weight: $fw-normal;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #666;
+}
+
+.w-25 {
+  width: 25% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.theme_primary_color {
+  color: $dynamicBlue  !important;
+}
+
+.theme_bg_primary_color {
+  background-color: $dynamicBlue  !important;
+  border-color: $dynamicBlue  !important;
+}
+
+.jost_font {
+  font-family: $jostFont;
+}
+
+.position-fixed {
+  position: fixed !important;
+}
+
+.btn {
+  &.generalBtn {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    min-width: 12rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition: all 0.2s;
+    border: transparent;
+
+    &:hover {
+      background-color: $dynamicBlue  !important;
+    }
+  }
+}
+
+.formErrors {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #cf0000;
+}
+
+.rating {
+  display: grid;
+  left: 0;
+  grid-auto-flow: row;
+
+  display: inline-flex;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  gap: 8px;
+}
+
+.add_container {
+  display: none;
+  top: 30%;
+  padding: 13px 16px;
+  background-color: $dynamicBlue;
+  border-radius: 999px;
+
+  svg {
+    color: white;
+  }
+}

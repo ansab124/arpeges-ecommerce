@@ -1,0 +1,197 @@
+.search__container {
+  overflow: hidden;
+
+  .black_box_container {
+    max-height: 460px;
+    overflow: hidden;
+    background-color: #0f0f0e;
+
+    .input__container {
+      input {
+        width: calc(100% - 50px);
+        background-color: #1c1c1a;
+        height: 50px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: $fw-semibold;
+
+        @media only screen and (min-width: 992px) {
+          width: 700px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+          width: 1000px;
+        }
+      }
+    }
+  }
+
+  .input_result_container {
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    // z-index: 1;
+  }
+
+
+  .itemsResult {
+    .search_section_container-content_section {
+      padding: 0 1rem;
+    }
+  }
+}
+
+// input[type="text"] {
+//   width: 100%;
+//   padding: 15px 10px;
+//   border: none;
+//   border-bottom: 1px solid #645979;
+//   outline: none;
+//   border-radius: 5px 5px 0 0;
+//   background-color: #fff;
+//   font-size: 16px;
+// }
+ul {
+  list-style: none;
+}
+
+.list {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+
+.list-items {
+  padding: 15px 5px;
+  // background: aquamarine;
+  cursor: pointer;
+}
+
+.list-items:hover {
+  background-color: #ddd;
+}
+
+//jhkjhkk
+
+.navbara {
+  overflow: hidden;
+  background-color: #0f0f0e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbara a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  // text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  // display: none;
+  // position: absolute;
+  // background-color: #f9f9f9;
+  width: 100%;
+
+  @media only screen and (min-width: 1200px) {
+    width: 1050px;
+  }
+
+  // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: auto;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.rowa:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rowa {
+  height: 340px;
+  overflow-y: auto;
+
+  @media only screen and (min-width: 992px) {
+    height: auto;
+  }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.search_response_card_container {
+  height: 98px;
+  background-color: #1c1c1a;
+
+  // .white_response_container {
+  //   width: 40%;
+  // }
+  .content_container {
+    .main_search_heading {
+      font-weight: $fw-semibold;
+      letter-spacing: 1px;
+      font-size: 13px;
+
+      @media only screen and (min-width: 575px) {
+        font-weight: $fw-bold;
+        font-size: 16px;
+      }
+    }
+
+    .main_search_sub_heading {
+      font-weight: $fw-semibold;
+      color: #a9a9a9;
+      letter-spacing: 1px;
+      font-size: 13px;
+
+      @media only screen and (min-width: 575px) {
+        font-weight: $fw-bold;
+        font-size: 16px;
+      }
+    }
+  }
+}

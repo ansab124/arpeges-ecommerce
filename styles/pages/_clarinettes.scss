@@ -1,0 +1,261 @@
+.clarinettes_filter_result_container {}
+
+.clarinettes_filter_result_card {
+  .clarinettes_filter_result_image_card {
+    .clarinettes_filter_image_content {
+      .clarinettes_filter_main_heading {
+
+        font-size: 18px !important;
+        font-weight: $fw-medium;
+        line-height: 23px;
+        font-family: $karlaFont  !important;
+
+
+        @media only screen and (min-width: 575px) {
+
+          font-size: 24px !important;
+          font-weight: $fw-semibold;
+          line-height: 36px;
+
+        }
+      }
+
+      .clarinettes_filter_featured_text_one {
+        font-size: 12px;
+        font-weight: $fw-normal;
+        font-family: $karlaFont  !important;
+
+        line-height: 25px;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 14px;
+          line-height: 36px;
+        }
+      }
+
+      .clarinettes_filter_featured_text_two {
+        font-size: 12px;
+        font-weight: $fw-normal;
+        line-height: 19px;
+        font-family: $karlaFont  !important;
+
+        font-style: italic;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 14px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}
+
+.clarinettes_filter_result_card:hover .clarinettes_filter_result_image_card .clarinettes_filter_image .plus_container {
+  display: block !important;
+  width: 43px;
+  color: $white;
+  height: 43px;
+  padding-top: 14px;
+  border-radius: 28px;
+  background-image: $rightTOLeftGradient;
+  top: 21px;
+  left: 32px;
+  z-index: 100;
+
+  // @media only screen and (min-width: 575px) {
+  //   width: 57px;
+  //   height: 57px;
+  //   padding-top: 19px;
+  //   top: 48px;
+  //   left: 68px;
+  // }
+}
+
+.clarinettes_filter_result_count_card {
+  height: 80px;
+
+  .clarinettes_filter_result_left_side {
+    .clarinettes_filter_result_count {
+      font-size: 20px;
+      font-weight: $fw-medium;
+      line-height: 15px;
+
+      @media only screen and (min-width: 575px) {
+        font-size: 30px;
+        font-weight: $fw-semibold;
+        line-height: 24px;
+      }
+    }
+
+    .clarinettes_filter_result_text {
+      font-size: 20px;
+      font-weight: $fw-medium;
+      line-height: 15px;
+
+      @media only screen and (min-width: 575px) {
+        font-size: 30px;
+        font-weight: $fw-semibold;
+        line-height: 24px;
+      }
+    }
+  }
+
+  // .clarinettes_filter_result_right_side {
+  // }
+}
+
+.clarinettes_filter_result_card {
+  .clarinettes_filter_result_image_card {
+    .clarinettes_filter_image_content {
+      .clarinettes_filter_main_heading {
+        font-size: 19px;
+        font-weight: $fw-medium;
+        line-height: 23px;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 24px;
+          font-weight: $fw-semibold;
+          line-height: 36px;
+        }
+      }
+
+      .clarinettes_filter_featured_text_one {
+        font-size: 12px;
+        font-weight: $fw-normal;
+        line-height: 25px;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 14px;
+          line-height: 36px;
+        }
+      }
+
+      .clarinettes_filter_featured_text_two {
+        font-size: 12px;
+        font-weight: $fw-normal;
+        line-height: 19px;
+        font-style: italic;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 14px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}
+
+.clarinettes_filter_result_card:hover .clarinettes_filter_result_image_card .clarinettes_filter_image .plus_container {
+  display: block !important;
+  width: 43px;
+  color: $white;
+  height: 43px;
+  padding-top: 14px;
+  border-radius: 28px;
+  background-image: $rightTOLeftGradient;
+  top: 21px;
+  left: 32px;
+
+  // @media only screen and (min-width: 575px) {
+  //   width: 43px;
+  //   height: 43px;
+  //   padding-top: 14px;
+
+  //   top: 21px;
+  //   left: 32px;
+  // }
+}
+
+.clarinettes_filter_result_count_card {
+  height: 80px;
+
+  .clarinettes_filter_result_left_side {
+    .clarinettes_filter_result_count {
+      font-size: 20px;
+      font-weight: $fw-medium;
+      line-height: 15px;
+
+      @media only screen and (min-width: 575px) {
+        font-size: 30px;
+        font-weight: $fw-semibold;
+        line-height: 24px;
+      }
+    }
+
+    .clarinettes_filter_result_text {
+      font-size: 20px;
+      font-weight: $fw-medium;
+      line-height: 15px;
+
+      @media only screen and (min-width: 575px) {
+        font-size: 30px;
+        font-weight: $fw-semibold;
+        line-height: 24px;
+      }
+    }
+  }
+
+  // .clarinettes_filter_result_right_side {
+  // }
+}
+
+.clarinettes_filter_result_card {
+  .clarinettes_filter_result_image_card {
+    .clarinettes_filter_image_content {
+      .clarinettes_filter_main_heading {
+        font-size: 19px;
+        font-weight: $fw-medium;
+        line-height: 23px;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 24px;
+          font-weight: $fw-semibold;
+          line-height: 36px;
+        }
+      }
+
+      .clarinettes_filter_featured_text_one {
+        font-size: 12px;
+        font-weight: $fw-normal;
+        line-height: 25px;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 14px;
+          line-height: 36px;
+        }
+      }
+
+      .clarinettes_filter_featured_text_two {
+        font-size: 12px;
+        font-weight: $fw-normal;
+        line-height: 19px;
+        font-style: italic;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 14px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}
+
+.clarinettes_filter_result_card:hover .clarinettes_filter_result_image_card .clarinettes_filter_image .plus_container {
+  display: block !important;
+  width: 43px;
+  color: $white;
+  height: 43px;
+  padding-top: 14px;
+  border-radius: 28px;
+  background-image: $rightTOLeftGradient;
+  top: 21px;
+  left: 32px;
+
+  // @media only screen and (min-width: 575px) {
+  //   width: 57px;
+  //   height: 57px;
+  //   padding-top: 19px;
+  //   top: 48px;
+  //   left: 68px;
+  // }
+}

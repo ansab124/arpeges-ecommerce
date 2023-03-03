@@ -1,0 +1,156 @@
+.fifth_section_container {
+  &-colored_container {
+    width: 39px;
+    height: 3px;
+    background-color: #1c1c1a;
+  }
+
+  .main_heading_container {
+    font-size: 26px;
+    letter-spacing: 0px;
+    line-height: 34px;
+    font-weight: $fw-medium;
+    font-family: $jostFont;
+
+    @media only screen and (min-width: 575px) {
+      font-size: 36px;
+      letter-spacing: 1px;
+      line-height: 72px;
+      font-weight: $fw-semibold;
+    }
+  }
+
+  .image_section_container {
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+      transform: translateY(-50px);
+      width: calc(100% + 100px);
+      margin-left: -50px;
+    }
+
+    @media only screen and (min-width: 1400px) {
+      transform: translateY(-100px);
+      width: calc(100% + 200px);
+      margin-left: -100px;
+
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .text_container {
+      font-size: 24px;
+      letter-spacing: 6px;
+      line-height: 29px;
+      bottom: 20px;
+      font-family: $jostFont;
+    }
+  }
+
+  .colored_main_container {
+    height: 450px;
+
+    @media only screen and (min-width: 575px) {
+      height: 580px;
+    }
+
+    .colored_container_map {
+      width: calc(100%);
+      z-index: -1;
+      background: transparent url("/assets/fifthSectionImages/calque_72.svg") no-repeat center center;
+      background-size: contain;
+
+      .heading_text {
+        font-size: 23px;
+        letter-spacing: 0px;
+        line-height: 14px;
+        font-weight: $fw-semibold;
+        font-family: $jostFont;
+        z-index: 9;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 30px;
+          letter-spacing: 1px;
+          line-height: 24px;
+          font-weight: $fw-bold;
+          font-family: $jostFont;
+          z-index: 9;
+        }
+      }
+
+      .sub_heading_text {
+        font-size: 19px;
+        letter-spacing: 0;
+        line-height: 20px;
+        font-weight: $fw-normal;
+        z-index: 1;
+        text-align: center;
+        font-family: $jostFont;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 22px;
+          letter-spacing: 1px;
+          line-height: 24px;
+          font-weight: $fw-medium;
+        }
+      }
+
+      .bottom_heading_text {
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 19px;
+        font-weight: $fw-semibold;
+        font-family: $jostFont;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 16px;
+          letter-spacing: 3px;
+          line-height: 24px;
+        }
+
+        .colored_line_container {
+          width: 105px;
+          height: 3px;
+          background-color: #1c1c1a;
+        }
+      }
+
+      .white_text.white_text_container {
+        // right: 220px;
+        // top: 100px;
+        transform: translate(0, 0);
+        z-index: 1;
+
+        @media only screen and (min-width: 575px) {
+          transform: translate(48px, 98px);
+        }
+
+        .white_dot {
+          background-color: $white;
+          width: 20px;
+          height: 20px;
+          border-radius: 14px;
+        }
+      }
+    }
+  }
+}
+
+.card_container_one {
+  height: 270px;
+  width: 275px;
+  background: url("/assets/fifthSectionImages/calque_76.svg");
+}
+
+.card_container_two {
+  height: 270px;
+  width: 275px;
+  background: url("/assets/fifthSectionImages/calque_75.svg");
+  background-size: cover;
+}
+
+.card_container_three {
+  height: 270px;
+  width: 275px;
+  background: url("/assets/fifthSectionImages/calque_96.svg");
+}

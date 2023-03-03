@@ -1,0 +1,165 @@
+.boutique {
+
+    &_content {
+        margin-bottom: 4rem;
+
+        &_hero {
+            height: 400px;
+            max-width: 100%;
+            background-image: url(/assets/boutique_main.png);
+            background-size: cover;
+
+
+        }
+
+       
+
+        &_intro {
+            @extend .d-flex;
+            @extend .align-items-center;
+            @extend .justify-content-center;
+
+            &-content {
+                max-width: 760px;
+                text-align: center;
+
+                h1 {
+                    font-size: 30px;
+                    letter-spacing: 1px;
+                    line-height: 34px;
+                    text-transform: uppercase;
+                    color: #1c1c1a;
+                    font-weight: 600;
+                    font-family: "Jost";
+                }
+
+                p {
+                    @extend .mt-4;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #666666;
+                    font-weight: 400;
+                    font-family: "Source Sans ", sans-serif;
+                    text-align: center;
+                }
+            }
+
+        }
+
+        &_address {
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            gap: 1rem;
+            align-items: flex-start;
+
+            @media only screen and (max-width: 971px) {
+                grid-template-columns: 12fr;
+
+
+            }
+
+            .address_card {
+
+                background-color: #f5f5f5;
+                @extend .p-4;
+                max-width: 400px;
+
+                @media only screen and (max-width: 971px) {
+                    max-width: 100%;
+                }
+
+                &_section {
+                    @extend .my-4;
+
+                    p {
+                        line-height: 30px;
+                    }
+
+                    &-title {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        h1 {
+                            font-size: 22px;
+                            font-weight: 500;
+                            font-family: "Jost", sans-serif;
+                            color: #000;
+
+                            @media only screen and (max-width: 971px) {
+                                font-size: 18px;
+
+                            }
+                        }
+
+                        span {
+                            // @extend .px-2;
+                            position: absolute;
+                            right: -80px;
+
+
+                            // width: 60px;
+                            padding: 0.5rem 1rem;
+                            background-color: #0098cc;
+
+                            @media only screen and (max-width: 971px) {
+                                right: -25px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &_description {
+            margin-top: 5rem;
+
+
+            h4 {
+                font-size: 23px;
+                line-height: 23px;
+                text-transform: uppercase;
+                font-weight: 400;
+                @extend .pb-4;
+                color: #1c1c1a;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 23px;
+                @extend .pb-3;
+            }
+        }
+
+        &_images {
+            margin-top: 5rem;
+
+            .text_container {
+                font-size: 24px;
+                letter-spacing: 6px;
+                line-height: 29px;
+                bottom: 20px;
+                font-family: "Jost", sans-serif;
+            }
+        }
+
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .boutique_content_hero { 
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .boutique_content_hero { 
+        height: 185px;
+    }
+
+}

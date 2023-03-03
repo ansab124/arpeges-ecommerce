@@ -1,0 +1,143 @@
+.second__section_container {
+  &-colored_container {
+    height: 171px;
+    background-color: #f4f4f4;
+
+    @media only screen and (min-width: 575px) {
+      height: 227px;
+    }
+  }
+
+  .container .line__container {
+    width: 39px;
+    height: 3px;
+    background-color: #1c1c1a;
+  }
+
+  &-main_heading {
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: 35px;
+    color: #1c1c1a;
+    font-weight: $fw-medium;
+    font-family: $jostFont;
+    text-align: center;
+
+    @media only screen and (min-width: 575px) {
+      font-size: 60px;
+      font-weight: $fw-semibold;
+      letter-spacing: 2px;
+      line-height: 72px;
+      text-align: left;
+    }
+  }
+
+  &-sub_heading {
+    font-size: 17px;
+    line-height: 24px;
+    color: #1c1c1a;
+    font-weight: $fw-light;
+    text-align: center;
+    font-family: $jostFont;
+
+    @media only screen and (min-width: 575px) {
+      text-align: left;
+      font-size: 24px;
+    }
+  }
+
+  .container.h-100 {
+    margin-top: -135px;
+  }
+
+  .vertical_container {
+    background-color: $black;
+    width: 230px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: $fw-normal;
+    height: 50px;
+
+    @media only screen and (min-width: 575px) {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: $fw-normal;
+      height: 50px;
+    }
+
+    @media only screen and (min-width: 1170px) {
+      background-color: $black;
+      height: 100%;
+      width: 78px;
+      // position: absolute;
+      // left: -105px;
+      // writing-mode: tb-rl;
+      transform: rotate(-180deg);
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: $fw-normal;
+    }
+  }
+}
+
+.vertical_container_text {
+  // transform: rotate(90deg) translate(0, -100%);
+  transform-origin: 0 0;
+  position: absolute;
+  top: 13px;
+  width: 203px;
+  left: 14px;
+
+  @media only screen and (min-width: 1170px) {
+    transform: rotate(90deg) translate(0, -100%);
+    transform-origin: 0 0;
+    position: absolute;
+    top: 16px;
+    width: 203px;
+    left: 28px;
+  }
+}
+
+.card_container {
+  cursor: pointer;
+  height: 111px;
+  background-color: #f1f1f1;
+  transition: all 0.5s ease-in-out;
+
+  .anticon {
+    // width: 70px;
+    // height: 70px;
+    color: $black;
+
+    svg {
+      height: 70px;
+      width: 60px;
+    }
+  }
+}
+
+.accordeon_section_container {
+  transition: background-color 0.5s ease;
+
+  a {
+    text-decoration: none;
+  }
+  .card_container:hover {
+    background-image: $rightTOLeftGradient;
+    color: $white;
+
+    .card_content {
+      color: $white;
+    }
+
+    .anticon {
+      color: $white;
+    }
+  }
+
+  .card_container:hover .card_content {
+    p {
+      color: $white !important;
+    }
+  }
+}

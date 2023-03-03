@@ -1,0 +1,118 @@
+.faq {
+    &_header {
+        max-width: 70%;
+        margin: 0 auto;
+
+        @include mq(md) {
+            max-width: 100%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-family: $jostFont;
+        }
+    }
+
+    &_search {
+        &_section {
+
+            label {
+                font-weight: bold;
+                font-size: 18px;
+                font-family: $jostFont;
+            }
+
+            &-input {
+                input {
+                    width: 100%;
+                    padding: 0.5rem 2rem 0.5rem 5rem;
+                }
+
+                // position:relative;
+                span {
+                    top: 20%;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+
+        &-contact {
+            background-color: $mediumGrey;
+            padding: 2rem 4rem !important;
+
+            p {
+                color: black !important;
+
+            }
+
+            a {
+                text-decoration: underline !important;
+            }
+
+            span {
+
+                font-size: 22px;
+                font-family: $jostFont;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &_questions {
+        color: black;
+
+        span {
+
+            font-size: 32px;
+            font-family: $jostFont;
+            text-transform: uppercase;
+            font-weight: 300 ;
+        }
+    }
+
+    &_card {
+        width: 100%;
+        background-color: #f1f1f1;
+
+        &_header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            &-dots {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 5px;
+                span {
+                    height: 12px;
+                    width: 12px;
+                    background-color: $dynamicBlue;
+                    border-radius: 100%;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 30px;
+            letter-spacing: 1px;
+            line-height: 34px;
+            text-transform: uppercase;
+            color: #1c1c1a;
+            font-weight: 600;
+            font-family: "Jost";
+        }
+
+        .active {
+            @extend .dynamic_blue;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .question_accordion-content{
+      padding-right: 3rem;
+    }
+   }

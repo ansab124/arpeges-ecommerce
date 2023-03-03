@@ -1,0 +1,334 @@
+.product_detail {
+  position: relative;
+
+  &-title {
+    font-family: $jostFont;
+    font-weight: $fw-semibold;
+    font-size: 44px;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+
+    @include mq(sm) {
+      font-size: 32px;
+    }
+
+    @include mq(md) {
+      font-size: 34px;
+    }
+    &-brand {
+      font-family: $jostFont;
+      // font-weight: $fw-semibold;
+      font-size: 44px;
+      letter-spacing: 1px;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &_price {
+    &-actual {
+      font-size: 30px;
+      color: $dynamicBlue;
+      font-weight: $fw-bold;
+    }
+
+    &-discounted {
+      font-size: 16px;
+      color: black;
+      font-weight: $fw-normal;
+    }
+  }
+
+  &-author {
+    font-size: 16px;
+    font-family: $sansSourceFont;
+    font-weight: $fw-bold;
+    color: black !important;
+  }
+
+  &-cart {
+    color: black !important;
+
+    span {
+      font-size: 18px;
+      font-family: $sansSourceFont;
+      font-weight: $fw-bold;
+    }
+
+    &_input {
+      position: relative;
+      max-width: 130px !important;
+      height: 60px;
+      border: 1px solid $lightGrey;
+
+      input[type="number"] {
+        -moz-appearance: textfield;
+        -moz-appearance: textfield;
+        height: 100%;
+        width: 100%;
+        padding: 0px 15px;
+        border: none;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+
+      &-buttons {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+
+        button {
+          background-color: transparent;
+          outline: none;
+          border: none;
+        }
+      }
+    }
+
+    .cartButton {
+      button {
+        height: 100% !important;
+        text-transform: uppercase;
+        display: flex;
+        gap: 1rem;
+
+        outline: none;
+        border: none;
+        padding-left: 2rem !important;
+
+        span {
+          font-size: 15px;
+          font-family: $jostFont;
+          font-weight: $fw-normal;
+          flex-grow: 1;
+        }
+      }
+    }
+
+    &-title {
+      span {
+        font-size: 15px;
+        font-family: $sansSourceFont;
+      }
+
+      &-colored {
+        color: $orange;
+      }
+    }
+  }
+
+  &-rating {
+    span {
+      font-size: 18px;
+      font-family: $sansSourceFont;
+      font-weight: $fw-normal;
+    }
+  }
+
+  &-share {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+
+    svg {
+      fill: $dynamicBlue;
+    }
+
+    @include mq(md) {
+      top: 70%;
+    }
+  }
+
+  &-misc {
+    font-size: 14px;
+    font-family: $sansSourceFont;
+  }
+
+  &-options {
+    p {
+      color: black;
+      text-transform: uppercase;
+    }
+  }
+
+  &-brand {
+    a {
+      font-size: 16px;
+      color: black;
+      font-family: $karlaFont;
+      text-decoration: none;
+      &:hover {
+        color: black;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.discountTag {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  font-family: $sansSourceFont;
+  color: white;
+  background-image: $rightTOLeftGradient;
+}
+
+.occasionTag {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  font-family: $sansSourceFont;
+  color: white;
+  background-color: $orange;
+}
+
+.sizeTag {
+  padding: 0.7rem;
+  color: white;
+  border-radius: 50%;
+  background-image: $rightTOLeftGradient;
+  font-family: $jostFont;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.coloredPrice {
+  color: $dynamicBlue;
+  letter-spacing: 1px;
+}
+
+.disabledText {
+  color: #b5afaf !important;
+}
+
+.video_section {
+  background-color: $mediumGrey;
+  padding: 3rem 0px;
+
+  .slick__small_carousel {
+    .slick-prev {
+      left: -10px;
+    }
+
+    // .slick-next {
+    //     left: -10px;
+    // }
+  }
+}
+
+.product_related {
+  background-color: $lightGrey;
+  padding: 3rem 0px;
+
+  &_tabs {
+    padding: 0px !important;
+
+    h3 {
+      font-size: 22px;
+      font-family: $jostFont;
+      font-weight: $fw-light;
+      text-transform: uppercase;
+    }
+
+    @include mq(md) {
+      padding: 10px !important;
+
+      margin-bottom: 2rem;
+    }
+  }
+
+  &_buttons {
+    max-width: 90%;
+    margin-top: 2rem;
+
+    button {
+      padding: 0px;
+      outline: none;
+      background-color: transparent;
+      border: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-family: $sansSourceFont;
+    }
+
+    .active {
+      padding: 1rem;
+      background: $rightTOLeftGradient;
+      color: white;
+    }
+  }
+
+  &_content {
+    padding: 0px !important;
+
+    &-bold {
+      font-size: 18px;
+      font-weight: $fw-semibold;
+      font-family: $jostFont;
+      padding: 0px 0px 1rem 0px;
+      border-bottom: 2px solid $mediumGrey;
+      text-transform: uppercase;
+    }
+
+    &-semibold {
+      font-size: 20px;
+      font-weight: $fw-normal;
+      font-family: $sansSourceFont;
+      padding: 0px 0px 1rem 0px;
+      border-bottom: 2px solid $mediumGrey;
+      text-transform: uppercase;
+    }
+
+    &-attributes {
+      li {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        // background-color: #b5afa9;
+        padding: 10px 0px;
+        border-bottom: 1px solid $mediumGrey;
+      }
+    }
+  }
+
+  ul {
+    padding: 0px !important;
+
+    li {
+      padding: 12px 0px;
+      font-size: 14px;
+      font-family: $sansSourceFont;
+    }
+  }
+}
+
+.product_suggestion {
+  padding: 3rem 0px;
+  border-bottom: 1px solid black;
+
+  h4 {
+    font-size: 24;
+    font-family: $jostFont;
+    font-weight: $fw-light;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    padding: 1rem;
+    font-size: 14px;
+    font-family: $sansSourceFont;
+    background: $rightTOLeftGradient;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .slick-next {
+    right: 8px !important;
+  }
+
+  .slick-prev {
+    left: 0px !important;
+    color: black;
+  }
+}

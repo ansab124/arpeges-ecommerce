@@ -1,0 +1,41 @@
+.question_accordion {
+    position: relative;
+
+    &-icon {
+        position: absolute;
+        right: 0px;
+        top: 2.5rem;
+    }
+
+    &-header {
+        h4 {
+            font-size: 22px;
+            font-weight: 600;
+            font-family: $karlaFont;
+        }
+    }
+}
+
+.question_dropdown {
+    padding-bottom: 14px;
+    border-bottom: 1px solid black;
+
+    &-header {
+         
+            span {
+                padding: 2px 18px;
+                background-color: $mediumGrey;
+                color: $dynamicBlue;
+                font-size: 26px;
+                font-weight: 600 !important;
+            }
+        
+
+        h3 {
+            font-size: 24px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-family: $sansSourceFont ;
+        }
+    }
+}

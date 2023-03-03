@@ -1,0 +1,52 @@
+.contactus_container {
+  background-color: #f1f1f1;
+  height: 400px;
+  &-heading_container {
+    .contactus_container-main_heading {
+      font-size: 13px;
+      font-weight: $fw-semibold;
+      font-family: $jostFont;
+
+      @media only screen and (min-width: 575px) {
+        font-size: 15px;
+      }
+    }
+  }
+  &-sub_heading_container {
+    .contactus_container-sub_main_heading {
+      font-weight: $fw-semibold;
+      font-size: 12px;
+      line-height: 24px;
+
+      @media only screen and (min-width: 575px) {
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
+  .colored_container {
+    width: 10px;
+    height: 2px;
+    background-color: #1c1c1a;
+  }
+  .address_heading {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+
+    @media only screen and (min-width: 575px) {
+      font-size: 15px;
+    }
+  }
+  .address_sub_heading {
+    span{
+      font-size: 13px;
+    font-weight: $fw-normal;
+    }
+    @media only screen and (min-width: 575px) {
+     span{
+      font-size: 14px;
+     }
+    }
+  }
+}

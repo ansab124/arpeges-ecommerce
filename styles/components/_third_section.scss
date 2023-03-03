@@ -1,0 +1,114 @@
+.third__section_container {
+  height: auto;
+  background-color: $white;
+
+  @media only screen and (min-width: 992px) {
+    background-color: #f4f4f4;
+    height: 568px;
+  }
+  &-heading__container {
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 17px;
+    color: #1c1c1a;
+    font-weight: $fw-semibold;
+    font-family: $jostFont;
+    margin-top: -4px;
+    transform: translateY(-11px);
+    @media only screen and (min-width: 575px) {
+      font-size: 30px;
+      letter-spacing: 1px;
+      line-height: 24px;
+      color: #1c1c1a;
+      font-weight: $fw-semibold;
+      margin-top: -4px;
+      transform: translateY(-11px);
+    }
+  }
+  .image__container {
+    height: 392px;
+    width: 272px;
+    background: url("/assets/calque_67.svg");
+  }
+  .dropdown__container {
+    height: 392px;
+    width: 100%;
+    background-color: #1c1c1a;
+
+    // background-color: #f4f4f4;
+    @media only screen and (min-width: 1170px) {
+      width: auto;
+    }
+
+    .dropdown__container_content {
+      .ant-select-selector {
+        font-style: italic;
+      }
+      .ant-select-arrow {
+        color: $black;
+      }
+    }
+  }
+  .dropdown__container .dropdown__container_content:hover {
+    .number__heading,
+    .ant-select-in-form-item.ant-select-single {
+      color: $dynamicBlue !important;
+    }
+    // .ant-select-arrow {
+    //   color: transparent;
+    // }
+    .line__container {
+      background-color: $dynamicBlue;
+    }
+  }
+  .line__container {
+    width: 30px;
+    height: 3px;
+    background-color: $white;
+  }
+  .number__heading {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #f4f4f4;
+    font-weight: $fw-normal;
+  }
+  .vertical_container {
+    background-color: $black;
+    height: 48px;
+    width: 221px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: $fw-normal;
+    transform: rotate(0deg);
+
+    @media only screen and (min-width: 1170px) {
+      height: 75%;
+      width: 78px;
+      // position: absolute;
+      // left: -105px;
+      // writing-mode: tb-rl;
+      transform: rotate(-180deg);
+      bottom: 0;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: $fw-normal;
+    }
+  }
+
+  &-button {
+    height: 40px;
+    background-color: $dynamicBlue !important;
+    border: 0;
+  }
+  .col-4.d-flex {
+    background-color: $black;
+  }
+}
+.ad_image {
+  height: 300px;
+
+  @media only screen and (min-width: 992px) {
+    height: 100%;
+  }
+}

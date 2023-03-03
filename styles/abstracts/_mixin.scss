@@ -1,0 +1,11 @@
+@mixin mq($canvas) {
+
+    @each $name,
+    $bp in $breakpoint {
+        @if $canvas ==$name {
+            @media only screen and (max-width: $bp) {
+                @content;
+            }
+        }
+    }
+}

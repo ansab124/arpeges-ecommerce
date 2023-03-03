@@ -1,0 +1,249 @@
+h3 {
+    margin: 5px 0;
+}
+
+.stories {
+    max-width: 470px;
+    min-height: 80vh;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: -1px 0px 7px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -1px 0px 7px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -1px 0px 7px 2px rgba(0, 0, 0, 0.3);
+
+    & img {
+        min-height: 80vh !important;
+
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .slick-slide {
+        max-height: 80vh;
+    }
+
+    .slick-track {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+
+    .arrows {
+
+        font-size: 24px;
+        color: white;
+
+        &_right {
+            position: absolute;
+            top: 50%;
+            right: -6rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+
+            &-next {
+                padding: 5px;
+                background-color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    color: black;
+
+                }
+            }
+
+        }
+
+        &_left {
+            position: absolute;
+            top: 50%;
+            left: -6rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+
+            &-previous {
+                padding: 5px;
+                background-color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & svg {
+                    color: black;
+
+                }
+            }
+
+            &-backward {
+                & svg {
+                    color: white;
+
+                }
+            }
+        }
+    }
+
+    .miscButtons {
+
+        position: absolute;
+        top: 1.5rem;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 1rem;
+
+        svg {
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+            font-weight: 800;
+        }
+    }
+}
+
+
+
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+
+
+
+.progressBarContainer {
+    position: absolute;
+    top: 8px;
+    max-width: 700px;
+
+    left: 10px;
+    right: 10px;
+    display: flex;
+}
+
+.progressBarContainer div {
+    display: block;
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 2%;
+
+    color: black;
+}
+
+.progressBarContainer div:last-child {
+    margin-right: 0;
+}
+
+.progressBarContainer div span.progressBar {
+    width: 100%;
+    height: 2px;
+    border-radius: 2rem;
+    background-color: rgba(241, 235, 235, 0.4);
+    display: block;
+}
+
+.progressBarContainer div span.progressBar .inProgress {
+    // background-color: white;
+    border-radius: 2rem;
+    height: 2px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+    transition: background 2s ease-in-out;
+    z-index: 100000000;
+
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(20px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    z-index: 100000;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+
+    border-radius: 5px;
+    max-width: 900px;
+
+    position: relative;
+
+    z-index: 100000;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
+
+.overlay.hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}

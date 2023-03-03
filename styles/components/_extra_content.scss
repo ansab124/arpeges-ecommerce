@@ -1,0 +1,298 @@
+.ad_container {
+  background-color: #609bee;
+}
+
+.card_content {
+  line-height: 22px;
+
+  p {
+    padding: 0px !important;
+    margin: 0px !important;
+    color: black;
+    font-size: 14px !important;
+    font-family: $jostFont;
+    font-weight: bold;
+  }
+
+  &:hover {
+    p {
+      color: white;
+    }
+  }
+}
+
+.image__container {
+  height: 320px;
+  background: #1c1c1a url("/assets/calque_100.png") no-repeat center;
+  background-size: cover;
+
+  .image_heading {
+    font-weight: $fw-medium;
+    font-size: 37px;
+    line-height: 44px;
+    font-family: $jostFont;
+
+    @media only screen and (min-width: 575px) {
+      font-weight: $fw-semibold;
+      font-size: 60px;
+      line-height: 72px;
+    }
+  }
+
+  .image_sub_heading {
+    font-weight: $fw-light;
+    font-size: 20px;
+    line-height: 33px;
+    font-family: $jostFont;
+
+    @media only screen and (min-width: 769px) {
+      font-weight: $fw-light;
+      font-size: 30px;
+      line-height: 72px;
+    }
+  }
+}
+
+.stentorPage {
+  .image__container {
+    background-image: url("/assets/calque_101.jpg");
+  }
+}
+
+.clarinettes_filter_button_text {
+  font-weight: $fw-medium;
+  font-size: 12px;
+  font-family: $karlaFont;
+  font-weight: $fw-bold;
+
+  @media only screen and (min-width: 575px) {
+    font-weight: $fw-bold;
+    font-size: 13px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding-top: 1rem;
+  }
+
+}
+
+.prod_price_card {
+  .prod_featured_price {
+    font-size: 20px;
+    font-weight: $fw-medium;
+    line-height: 22px;
+
+    @media only screen and (min-width: 575px) {
+      font-size: 24px;
+      font-weight: $fw-semibold;
+      line-height: 36px;
+    }
+  }
+
+  .prod_old_price {
+    font-size: 14px;
+    font-weight: $fw-normal;
+    line-height: 18px;
+    text-decoration: line-through;
+    color: #999999;
+
+    @media only screen and (min-width: 575px) {
+      font-size: 14px;
+      line-height: 23px;
+    }
+  }
+
+  .prod_price_multiply_contianer {
+    font-size: 12px;
+    font-weight: $fw-normal;
+  }
+}
+
+.prod_old_price {
+  font-size: 14px;
+  font-weight: $fw-normal;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: #999999;
+
+  @media only screen and (min-width: 575px) {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+
+.prod_result_dicount_card {
+  background-image: $rightTOLeftGradient;
+  font-size: 12px;
+  height: 34px;
+
+  color: $white;
+  font-weight: $fw-normal;
+  padding: 0.2rem 0.5rem;
+
+  @media only screen and (max-width: 678px) {
+    position: absolute;
+    left: 1rem;
+  }
+
+  @media only screen and (min-width: 575px) {
+    font-size: 15px;
+    font-weight: $fw-medium;
+  }
+
+}
+
+.prod_dicount_row_card {
+  background-image: $rightTOLeftGradient;
+  font-size: 12px;
+  color: $white;
+  font-weight: $fw-normal;
+  min-width: 47px;
+  height: 22px;
+  transform: translate(-27px, 0px);
+
+  @media only screen and (min-width: 575px) {
+    font-size: 14px;
+    min-width: 65px;
+    height: 25px;
+    transform: translate(-52px, 33px);
+  }
+}
+
+.prod_featured_price {
+  font-size: 20px;
+  font-weight: $fw-medium;
+  line-height: 22px;
+
+  @media only screen and (min-width: 575px) {
+    font-size: 23px;
+    font-weight: $fw-semibold;
+    line-height: 36px;
+    white-space: nowrap;
+  }
+}
+
+.clarinettes_filter_result_card .clarinettes_filter_result_image_card .clarinettes_filter_image img {
+  width: 100px;
+
+  @media only screen and (min-width: 575px) {
+    width: auto;
+  }
+}
+
+
+
+.ant_expand_btn {
+  background: transparent;
+  border: 0;
+
+  span {
+    text-decoration: underline;
+  }
+}
+
+.btn__tabs_container {
+  .btn__container {
+    padding: 0.8rem 1.3rem;
+
+    cursor: pointer;
+    border: 0;
+    color: $black;
+    font-weight: $fw-normal;
+    background-color: $white;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+
+    span {
+      font-weight: $fw-normal;
+    }
+  }
+
+  .btn__container:hover {
+    background-image: $rightTOLeftGradient;
+    color: $white;
+  }
+
+  .btn__container_active {
+    background-image: $rightTOLeftGradient;
+    color: $white;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.input_dash_class {
+  border: 0;
+  border-bottom: 1px #000 dashed;
+  background: transparent;
+}
+
+.clarinettes_filter_image {
+  width: 100px !important;
+
+  @media only screen and (min-width: 575px) {
+    width: auto;
+  }
+
+  .plus_container {
+    display: none !important;
+  }
+
+  img {
+    width: inherit;
+
+    @media only screen and (min-width: 575px) {
+      width: inherit;
+    }
+  }
+}
+
+// test
+
+[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  outline: 0;
+  flex-grow: 0;
+  transition: background 300ms;
+}
+
+/* Pseudo element for check styling */
+
+[type="checkbox"]::before {
+  content: "";
+  color: #fff;
+  display: block;
+  width: inherit;
+  height: inherit;
+  border: 0;
+  background-color: #fff;
+  background-size: contain;
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+/* Checked */
+
+[type="checkbox"]:checked {
+  background-color: currentcolor;
+}
+
+[type="checkbox"]:checked::before {
+  box-shadow: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='currentColor'/%3E %3C/svg%3E");
+}
+
+
+@media only screen and (max-width: 480px) {
+  .partition_filter_result_count_card {
+    padding: 2rem 0;
+  }
+
+  .audio_player span {
+    white-space: nowrap;
+  }
+}

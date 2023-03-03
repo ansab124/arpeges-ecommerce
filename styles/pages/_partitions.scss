@@ -1,0 +1,159 @@
+.partition_main_container {
+  .partition_checkbox_container {
+    font-size: 15px;
+    font-weight: $fw-normal;
+  }
+
+  .partition_input_container {
+    height: 35px;
+    background-color: $white;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+
+    &::placeholder {
+      font-size: 14px;
+      letter-spacing: 0px;
+      line-height: 19px;
+      color: #1c1c1a;
+      font-weight: $fw-normal;
+      font-style: italic;
+      font-family: $jostFont;
+    }
+  }
+
+  .partition_black_container {
+    background-color: $black;
+
+    .black_container_heading {
+      font-size: 15px;
+      font-weight: $fw-bold;
+    }
+  }
+
+  
+  .partition_grey_container {
+    background-color: #f1f1f1;
+
+    .partition_grey_container_heading {
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-weight: $fw-bold;
+      color: #1c1c1a;
+    }
+
+    .partition_btn_class {
+      padding: 0px;
+      outline: none;
+      border: none;
+      padding: 6px 10px;
+      background-image: $rightTOLeftGradient;
+    }
+  }
+
+
+  .partition_filter_result_count_card {
+    .partition_filter_result_left_side {
+      .partition_filter_result_count {
+        font-size: 20px;
+        font-weight: $fw-medium;
+        line-height: 15px;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 30px;
+          font-weight: $fw-semibold;
+          line-height: 24px;
+        }
+      }
+
+      .partition_filter_result_text {
+        font-size: 20px;
+        font-weight: $fw-medium;
+        line-height: 15px;
+
+        @media only screen and (min-width: 575px) {
+          font-size: 30px;
+          font-weight: $fw-semibold;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .filter_sidebar_hide {
+    top: 0;
+    left: 0;
+    width: 320px;
+    overflow-y: auto;
+    z-index: 1;
+  }
+}
+
+
+.prod_container {
+  width: 100%;
+  position: relative;
+
+  .prod_main_heading {
+    font-size: 14px;
+    font-weight: $fw-semibold;
+    line-height: 16px;
+    letter-spacing: 1px;
+
+    @media only screen and (min-width: 575px) {
+      font-size: 16px;
+      font-weight: $fw-bold;
+      line-height: 22px;
+      letter-spacing: 2px;
+      min-height: 3rem;
+    }
+  }
+
+  button {
+    padding: 0px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+
+  .prod_sub_heading {
+    font-size: 12px;
+    font-weight: $fw-normal;
+
+    @media only screen and (min-width: 575px) {
+      font-size: 13px;
+    }
+  }
+
+  .prod_sub_heading_one {
+    font-size: 13px;
+    font-weight: $fw-normal;
+    font-style: italic;
+
+    @media only screen and (min-width: 575px) {
+      font-size: 14px;
+    }
+  }
+
+  .prod_sub_heading_two {
+    font-weight: $fw-semibold;
+    font-size: 10px;
+    font-style: italic;
+    color: #999999;
+
+    @media only screen and (min-width: 575px) {
+      font-size: 12px;
+      font-weight: $fw-bold;
+    }
+  }
+
+  .prod_dropdown {
+    line-height: 17px;
+    font-size: 13px;
+    font-weight: $fw-normal;
+    text-decoration: underline;
+
+    @media only screen and (min-width: 575px) {
+      line-height: 20px;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.standard {
+  &_hero {
+    width: 100%;
+    height: 400px;
+    // background-image: url(/assets/carousalImages/carousalImg3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h1 {
+      font-size: 30px;
+      letter-spacing: 1px;
+      line-height: 34px;
+      text-transform: uppercase;
+      color: #1c1c1a;
+      font-weight: 600;
+      font-family: "Jost";
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+  }
+
+  &_intro {
+    max-width: 760px;
+    text-align: center;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 30px;
+      letter-spacing: 1px;
+      line-height: 34px;
+      text-transform: uppercase;
+      color: #1c1c1a;
+      font-weight: 600;
+      font-family: "Jost";
+    }
+
+    p {
+      @extend .mt-4;
+      font-size: 14px;
+      line-height: 30px;
+      color: #666666;
+      font-weight: 400;
+      font-family: "Source Sans ", sans-serif;
+      text-align: center;
+    }
+  }
+
+  &_content {
+    &_section {
+      @extend .mb-5;
+
+      h4 {
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      ul {
+        li {
+          color: black;
+
+          &::before {
+            content: "•";
+            color: black;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+        }
+      }
+    }
+  }
+
+  &_card {
+    width: 100%;
+    background-color: #f1f1f1;
+
+    h3 {
+      font-size: 30px;
+      letter-spacing: 1px;
+      line-height: 34px;
+      text-transform: uppercase;
+      color: #1c1c1a;
+      font-weight: 600;
+      font-family: "Jost";
+    }
+
+    .active {
+      @extend .dynamic_blue;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.best_seller_card_container {
+  .card_main_heading {
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #1c1c1a;
+    font-weight: $fw-semibold;
+    font-family: "Jost";
+  }
+  .products_container {
+    background-color: #f1f1f1;
+
+    .product_content {
+      .product_content_heading {
+        font-weight: $fw-semibold;
+        font-size: 12px;
+        line-height: 16px;
+
+        @media only screen and (min-width: 575px) {
+          font-weight: $fw-bold;
+          font-size: 13px;
+          line-height: 18px;
+        }
+      }
+      .product_content_sub_heading {
+        font-weight: $fw-medium;
+        font-size: 11px;
+        line-height: 18px;
+
+        @media only screen and (min-width: 575px) {
+          font-weight: $fw-semibold;
+          font-size: 12px;
+          line-height: 24px;
+        }
+      }
+      .product_content_price {
+        font-weight: $fw-medium;
+        font-size: 12px;
+        line-height: 29px;
+
+        @media only screen and (min-width: 575px) {
+          font-weight: $fw-semibold;
+          font-size: 14px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}

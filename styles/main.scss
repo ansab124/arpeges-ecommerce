@@ -1,0 +1,59 @@
+@import "./base/variables";
+//Abstract scss files
+@import "./base/fonts";
+@import "./abstracts/mixin";
+@import "./abstracts/variables";
+@import "./base/typo";
+
+//Base scss files
+@import "./base/bootstrap";
+@import "./base/reset";
+@import "./abstracts/utility";
+@import "./abstracts/aos";
+
+// Layout Scss Files
+@import "./layout/_header.scss";
+@import "./layout/_footer.scss";
+
+// Component Imports
+@import "./components/_slider_slick.scss";
+@import "./components/_second_section";
+@import "./components/_third_section";
+@import "./components/_fourth_section";
+@import "./components/_fifth_section";
+@import "./components/_contactus_card";
+@import "./components/best_seller_card";
+@import "./components/rechercher_partition";
+@import "./components/controls";
+@import "./components/extra_content";
+@import "./components/breadcrum";
+@import "./components/stories";
+@import "./components/product";
+@import "./components/faq";
+
+@import "./pages/instruments";
+@import "./pages/clarinettes";
+@import "./pages/search";
+@import "./pages/boutique";
+@import "./pages/standard";
+@import "./pages/marques";
+@import "./pages/partitions";
+@import "./pages/stentor";
+@import "./pages/user";
+@import "./pages/cart";
+@import "./pages/dashboard";
+@import "./pages/faq";
+@import "./pages/contactez";
+@import "./pages/errorpages";
+
+@import "./components/loading_mask";
+
+//pages scss file
+body {
+  color: $white !important;
+}
+
+// components scss files
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
